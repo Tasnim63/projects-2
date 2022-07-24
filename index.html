@@ -286,7 +286,17 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <!-- javascript -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script >
+      let menu=document.querySelector('#navbar_icon');
+let navbar=document.querySelector('.navbar');
+menu.addEventListener("click",function(){
+    navbar.classList.toggle("active")
+})
+
+window.onscroll=()=>{
+    navbar.classList.remove("active")
+}
+    </script>
   </body>
 </html>
 

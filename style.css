@@ -334,7 +334,8 @@ section {
 }
 @media only screen and (max-width: 720px) {
   header {
-    padding: 10px 70px;
+    padding: 10px 60px;
+   
   }
   .home {
     grid-template-columns: 1fr;
@@ -346,5 +347,16 @@ section {
     justify-content: center;
     text-align: center;
   }
+  section{
+padding: 100px 7%;
+  }
  
+ 
+}
+@media only screen and (max-width: 575px){
+   .col{
+    width: 100%;
+
+  
+   } 
 }
