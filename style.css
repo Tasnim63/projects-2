@@ -98,12 +98,7 @@ header {
   color: var(--text-color);
   font-weight: 600;
 }
-#navbar_icon {
-  color: var(--text-color);
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
+
 .navbar {
   display: flex;
 }
@@ -211,14 +206,145 @@ section {
   transition: 0.5s;
   background: var(--service-image);
 }
-.service_heading{
+.service_heading {
   font-size: 30px;
   text-align: center;
   margin-top: 23px;
 }
-.service_des{
-  font-size:22px ;
+.service_des {
+  font-size: 22px;
   color: var(--text-color-p);
   text-align: center;
   margin-top: 3px;
+}
+/* footer */
+.footer {
+  padding: 10px 0;
+}
+.col {
+  width: 25%;
+}
+.footer_heading {
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+  position: relative;
+}
+.footer_heading::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 70px;
+  left: 0;
+  bottom: -8px;
+  background: var(--text-color);
+}
+
+.col ul li:not(last-child) {
+  margin-bottom: 20px;
+}
+.col ul li a {
+  color: var(--text-color-p);
+  font-size: 22px;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+.col ul li a:hover {
+  color: var(--secondary-color);
+  transform: translateX(-12px);
+}
+.col .social_icons {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.col .social_icons a {
+  padding: 17px;
+
+  height: 60px;
+  width: 60px;
+  color: var(--text-color);
+  background: #1f1f1f;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.col .social_icons a:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+  background: var(--service-image);
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+#navbar_icon {
+  display: none;
+}
+
+@media only screen and (max: 1560px) {
+  .header {
+    padding: 15px 40px;
+  }
+  :root {
+    --primary-font: 2rem;
+  }
+  #navbar_icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .section {
+    padding: 50px 8%;
+  }
+  #navbar_icon {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--text-color);
+  }
+  header .navbar {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #5e5856;
+    transition: 0.3s;
+  }
+  header .navbar.active {
+    top: 70px;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+  }
+  .col {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  header {
+    padding: 10px 70px;
+  }
+  .home {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .about{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+ 
 }
