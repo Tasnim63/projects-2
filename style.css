@@ -1,0 +1,224 @@
+/* google font link */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;1,600&display=swap");
+/* basics style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --primary-color: #090c0f;
+  --text-color: white;
+  --secondary-color: #b99272;
+  --text-color-p: #6c757d;
+  --primary-font: 120px;
+  --service-image: #5e5856;
+}
+/* css utilities */
+.primary-heading {
+  font-size: 50px;
+  margin: 20px 0;
+}
+.text-align {
+  text-align: center;
+}
+.seconry-heading {
+  font-size: 50px;
+  margin: 20px 0;
+  color: var(--secondary-color);
+}
+.box_menu_name {
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin: 20px 0;
+  text-align: center;
+}
+.box_menu_descriptio {
+  font-size: 35px;
+  color: var(--text-color-p);
+  text-align: center;
+}
+.box_menu_price {
+  color: var(--secondary-color);
+  font-size: 20px;
+  text-align: center;
+}
+.box_btn {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 12px 20px;
+
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+}
+.box_btn a {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.box_btn:hover {
+  background: var(--text-color-p);
+  transition: 0.3s;
+}
+.box_phone_icon {
+  color: chartreuse;
+  padding: 20px;
+  margin-top: 12;
+  font-size: 20px;
+}
+.primary-text {
+  font-size: 25px;
+  margin: 10px 0;
+  color: var(--text-color-p);
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+/********************************** header */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--primary-color);
+}
+.logo {
+  font-size: 2.4rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+#navbar_icon {
+  color: var(--text-color);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--secondary-color);
+  transition: 0.4s;
+}
+/**************************home css style */
+section {
+  padding: 115px 17%;
+}
+.home {
+  width: 100%;
+  min-height: 66vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.home_description {
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-size: 25px;
+}
+.btn:hover {
+  background: var(--secondary-color);
+  transition: 0.5s;
+}
+.home_img img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+/* about section */
+
+.about_img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 700px;
+  height: auto;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3.5rem;
+  align-items: center;
+}
+/* menu section */
+.box_img img {
+  max-width: 100%;
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.menu_container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 3.5rem;
+  align-items: center;
+}
+.box {
+  position: relative;
+  margin-top: 4rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* services style start */
+.services_container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 8.5rem;
+  align-items: center;
+}
+
+.service_box img {
+  max-width: 100%;
+  display: flex;
+  background: #1f1f1f;
+  padding: 40px;
+  height: 250px;
+  width: 320px;
+  border-radius: 50%;
+}
+.service_box img:hover {
+  transition: 0.5s;
+  background: var(--service-image);
+}
+.service_heading{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 23px;
+}
+.service_des{
+  font-size:22px ;
+  color: var(--text-color-p);
+  text-align: center;
+  margin-top: 3px;
+}
