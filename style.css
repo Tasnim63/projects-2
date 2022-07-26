@@ -288,7 +288,7 @@ section {
   display: none;
 }
 
-@media only screen and (max: 1560px) {
+@media only screen and (max-width: 1560px) {
   .header {
     padding: 15px 40px;
   }
@@ -332,31 +332,31 @@ section {
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 750px) {
   header {
     padding: 10px 60px;
-   
   }
   .home {
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
   }
-  .about{
+  .about {
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
   }
-  section{
-padding: 100px 7%;
+  section {
+    padding: 100px 7%;
+  }
+  .service_box img{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .col {
+    width: 100%;
   }
  
- 
-}
-@media only screen and (max-width: 575px){
-   .col{
-    width: 100%;
-
-  
-   } 
 }
