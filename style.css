@@ -332,6 +332,7 @@ section {
     margin-bottom: 10px;
   }
 }
+
 @media only screen and (max-width: 750px) {
   header {
     padding: 10px 60px;
@@ -349,7 +350,7 @@ section {
   section {
     padding: 100px 7%;
   }
-  .service_box img{
+  .service_box img {
     width: 500px;
   }
 }
@@ -358,5 +359,4 @@ section {
   .col {
     width: 100%;
   }
- 
 }
